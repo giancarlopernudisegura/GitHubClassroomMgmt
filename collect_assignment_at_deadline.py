@@ -24,7 +24,7 @@ def run(username, tokenFile, organization, deadline,assignment):
 
 	currentDir = os.getcwd()
 
-	for repo in course.repositories():
+	for repo in course.iter_repos():
 		if(repo.name.startswith(assignment)):
 			if (os.path.exists(repo.name)): #check first that we don't already have a local copy of this repo
 				os.chdir(currentDir + "/" + repo.name)
