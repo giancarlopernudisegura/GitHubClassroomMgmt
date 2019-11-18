@@ -13,18 +13,23 @@ import os
 def run(username, tokenFile, organization, deadline,assignment):
 	with open(tokenFile, 'r') as file:
 			token = file.readline().strip()
+	print(token)
+	print(username)
 	github = login(username,token=token)
 	memberships = github.organization_memberships()
+	print(memberships)
 	course = None
 
 	for membership in memberships:
+		
 		if membership.organization.login.lower() == organization.lower():
+			print('aaaaaaaaaaaaaaaaaaaa')
 			course = membership.organization
 			break
 
 	currentDir = os.getcwd()
 
-	for repo in course.iter_repos():
+	for repo in course.repositories():
 		if(repo.name.startswith(assignment)):
 			if (os.path.exists(repo.name)): #check first that we don't already have a local copy of this repo
 				os.chdir(currentDir + "/" + repo.name)
