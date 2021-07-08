@@ -13,6 +13,10 @@ The following python liraries are being used:
 - argparse
 - os
 
+## GitHub Token
+You'll also need a GitHub token file. To get a token, go to **Settings > Developer settings > Personal access tokens** and click on [Generate new token](https://github.com/settings/tokens/new). For grading student assignments and submissions, give it enough permissions to read and write to repositories. When you click your **Generate** it will take you back to the overview of your tokens. Copy that token, create a new file and paste the token into there.
+![screenshot example](https://i.gyazo.com/51d1e700f5b54339e0921d67188b1369.png)
+
 # Script descriptions:
 
 Create a directory called `assignmentName` where all the repos for this assignment will be cloned to. You can run any of the following scripts from within that directory.
