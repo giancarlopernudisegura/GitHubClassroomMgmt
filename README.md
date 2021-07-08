@@ -14,7 +14,7 @@ The following python liraries are being used:
 - os
 
 ## GitHub Token
-You'll also need a GitHub token file. To get a token, go to **Settings > Developer settings > Personal access tokens** and click on [Generate new token](https://github.com/settings/tokens/new). For grading student assignments and submissions, give it enough permissions to read and write to repositories. When you click your **Generate** it will take you back to the overview of your tokens. Copy that token, create a new file and paste the token into there.
+You'll also need a GitHub token file. To get a token, go to **Settings > Developer settings > Personal access tokens** and click on [Generate new token](https://github.com/settings/tokens/new). For grading student assignments and submissions, give it enough permissions to read and write to repositories. When you click **Generate** it will take you back to the overview of your tokens. Copy that token, create a new file, paste the token into that new file and save.
 ![screenshot example](https://i.gyazo.com/51d1e700f5b54339e0921d67188b1369.png)
 
 # Script descriptions:
